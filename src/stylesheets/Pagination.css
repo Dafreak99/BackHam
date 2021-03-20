@@ -1,0 +1,37 @@
+.pagination .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination .container div a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #2f89fc;
+  text-decoration: none;
+}
+
+.pagination .container div:not(.active):hover a {
+  color: #000003;
+}
+.pagination .container div:not(.active):hover {
+  background: #d2d2d2;
+}
+
+.pagination .container div {
+  height: 40px;
+  width: 40px;
+  margin: 4px;
+  border: 1px solid #ffffff29;
+  border-radius: 50%;
+  position: relative;
+  transition: 250ms all;
+}
+.pagination .container .active {
+  background: #ffffffcf;
+}
+.pagination .container .active a {
+  color: #000000e3;
+}
