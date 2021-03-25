@@ -1,15 +1,9 @@
 import React, { Component } from "react";
 import Mainnav from "./Mainnav";
-import Page from "./Page";
-import About from "./About";
-import Service from "./Service";
-import Portfolio from "./Portfolio";
-import StatisticPortfolio from "./StatisticPortfolio";
 import Footer from "./Footer";
 import Header from "./Header";
 import Maintitle from "./Maintitle";
 import Thumbnail from "./Thumbnail";
-import Pagination from "./Pagination";
 
 export default class HomePage extends Component {
   render() {
@@ -24,7 +18,35 @@ export default class HomePage extends Component {
             <Thumbnail />
           </div>
         </div>
-        <Pagination />
+        <div className="pagination">
+          <div className="container">
+            <div>
+              <a href="#">
+                <i class="fa fa-caret-left" />
+              </a>
+            </div>
+            <div className="active">
+              <a href="#">1</a>
+            </div>
+            <div>
+              <a href="#">2</a>
+            </div>
+            <div>
+              <a href="#">3</a>
+            </div>
+            <div>
+              <a href="#">4</a>
+            </div>
+            <div>
+              <a href="#">5</a>
+            </div>
+            <div>
+              <a href="#">
+                <i class="fa fa-caret-right" />
+              </a>
+            </div>
+          </div>
+        </div>
         <Footer />
       </React.Fragment>
     );
