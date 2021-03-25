@@ -677,6 +677,7 @@ header .container .logo a span {
   .container {
     max-width: 1140px;
     display: grid;
+    margin: 0 auto;
     grid-template-columns: repeat(12, 1fr);
   }
 }
